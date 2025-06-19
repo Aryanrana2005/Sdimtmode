@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore Our Courses | SDIMT</title>
+  <link rel="stylesheet" href="styless.css" />
+  <style>
+    .page-header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: linear-gradient(90deg, #003f88, #007f5f);
+      color: white;
+    }
+
+    .page-header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .page-header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+      color: #e0f7f1;
+    }
+
+    .course-preview-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      padding: 40px 20px 60px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .course-box {
+      background: #003f88;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 15px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .course-box:hover {
+      background-color: #007f5f;
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .course-box::after {
+      content: 'View Details →';
+      display: block;
+      font-size: 0.9rem;
+      margin-top: 15px;
+      color: #cceeee;
+      font-weight: normal;
+    }
+
+    @media (max-width: 600px) {
+      .page-header h1 {
+        font-size: 2.2rem;
+      }
+
+      .course-box {
+        padding: 30px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="https://www.sdimtedu.com/wp-content/uploads/2024/08/log-1.png" alt="SDIMT Logo" />
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="page-header">
+    <h1>Explore Our Courses</h1>
+    <p>SDIMT offers industry-aligned undergraduate and postgraduate programs designed to empower future professionals with knowledge, skills, and vision.</p>
+  </header>
+
+  <!-- Course Boxes -->
+  <section class="courses-preview">
+    <div class="course-preview-list">
+      <a href="mba.html" class="course-box">MBA</a>
+      <a href="bba.html" class="course-box">BBA</a>
+      <a href="bca.html" class="course-box">BCA</a>
+      <a href="mca.html" class="course-box">MCA</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 SDIMT Yamuna Nagar. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
